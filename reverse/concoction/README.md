@@ -10,7 +10,7 @@ Running the program will prompt you with asking for several quantities of ingred
 
 Open the binary in a decompiler of your choice. For this writeup I will analyze the original upload of the Linux executable (now labeled `concoction_old` on the challenge) in IDA Free. Other good reverse engineering tools are Ghidra and Binary Ninja. Make sure to import the debugging information if your reverse engineering tool allows you to.
 
-![Screenshot 1](/images/writeup1.png)
+![Screenshot 1](images/writeup1.png)
 
 When you first open the binary you will be greeted with this disassembly code and a list of function names on the left. You should see some fragments of the program in the code, such as the strings that are prompted to the user ("Time to make a ghastly cyberbrew!").
 
@@ -116,7 +116,7 @@ Executables can be compiled using 'static linking', which makes an executable se
 
 When writing up this solution walkthrough I realized that the statically linked executables are much more difficult to navigate than the dynamically linked counterpart. Thus, I apologize if anybody struggled with this challenge who downloaded the executable later in the competition, or attempted to analyze the Windows executable without looking at the Linux one.
 
-## Flag
+## Flag 
 ````
 CYBORG{RECIPE=7914-111100-2310-51337-42154142-9111-decompiler}
 ````
